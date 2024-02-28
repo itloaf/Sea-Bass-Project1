@@ -1,6 +1,32 @@
 :root {
     /* Colors taken from the Domino's website. */
-    --DomiWhite: #f5f5f5;
-    --DomiBlue: #29628d;
-    --DomiRed: #d0343e;
+    --DomiWhite: #ffffff;
+    --DomiBlue: #006491;
+    --DomiRed: #e31837;
+}
+
+.bg-blue{
+    background-color: var(--DomiBlue);
+}
+.text-blue{
+    color:var(--DomiBlue);
+}
+.bg-red{
+    background-color: var(--DomiRed);
+}
+.text-red{
+    color:var(--DomiRed);
+}
+.bg-white{
+    background-color: var(--DomiWhite);
+}
+.text-white{
+    color:var(--DomiWhite);
+}
+
+/* This class is for the collapsable nav menu. The z-index puts it over the navbar, and the width limits its size. */
+
+.nav-collapse{
+    z-index: 1030 !important;
+    width: 50%;
 }

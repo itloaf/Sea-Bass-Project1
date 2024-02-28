@@ -17,7 +17,7 @@ The PDF should be named “Firstname-Lastname-Project1.pdf” and submitted to t
 Included in the submission comments should be a link to your GitHub Repository for the project.
 
 Required Tasks
-    1.  [5pts] Initialize a new Git repository for the project, and push it to your GitHub account. Make commits regularly to show your progress.
+    /*   1.  [5pts] Initialize a new Git repository for the project, and push it to your GitHub account. Make commits regularly to show your progress.   */
     2.  [10pts] Create the HTML framework for a landing page that includes a <header> (navigation bar), multiple <section> divisions for the content of your page, and a <footer>.
     3.  [25pts] Effective use of CSS for styling elements, including fonts, colors, margins, padding, and borders. Your styles should be consistent across the page.
     4.  [10pts] Include 3+ images that are relevant to the content of the website.
@@ -25,7 +25,7 @@ Required Tasks
 
 Optional Tasks
     -   [15pts] Include an interactive feature on your website (i.e. a carousel, a modal, a dropdown, an animated SVG image etc.). Max. 2 interactive features for up to 30 points total.
-    -   [15pts] Implement the CSS framework Bootstrap to style your website (must be the majority of your styling)
+    /*   -   [15pts] Implement the CSS framework Bootstrap to style your website (must be the majority of your styling)   */
     -   [10pts] Include an HTML form with at least 5 <input> elements on your website (it does not need to be functional)
     -   [10pts] Include a video on your website
     -   [5pts] Include a favicon
