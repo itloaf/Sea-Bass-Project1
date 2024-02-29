@@ -24,9 +24,27 @@
     color:var(--DomiWhite);
 }
 
-/* This class is for the collapsable nav menu. The z-index puts it over the navbar, and the width limits its size. */
 
-.nav-collapse{
-    z-index: 1030 !important;
-    width: 50%;
+
+.top-buffer{
+    margin-top: 100px;
 }
+
+.carousel-item{
+    z-index: -1;
+}
+
+.carousel-background-gradient {
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0), rgba(255, 255, 255, 0), rgba(255, 255, 255, 1));
+  }
+  
+  .carousel-logo-width {
+    width: 40vw;
+  }
+
+.kaushan-script-regular {
+    font-family: "Kaushan Script", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
