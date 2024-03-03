@@ -17,19 +17,19 @@ The PDF should be named “Firstname-Lastname-Project1.pdf” and submitted to t
 Included in the submission comments should be a link to your GitHub Repository for the project.
 
 Required Tasks
-    /*   1.  [5pts] Initialize a new Git repository for the project, and push it to your GitHub account. Make commits regularly to show your progress.   */
+    1.  [5pts] Initialize a new Git repository for the project, and push it to your GitHub account. Make commits regularly to show your progress.   */
     2.  [10pts] Create the HTML framework for a landing page that includes a <header> (navigation bar), multiple <section> divisions for the content of your page, and a <footer>.
     3.  [25pts] Effective use of CSS for styling elements, including fonts, colors, margins, padding, and borders. Your styles should be consistent across the page.
     4.  [10pts] Include 3+ images that are relevant to the content of the website.
-    /*   5.  [10pts] Usage of a color scheme that is consistent, visually appealing, and applicable to the content of the website.
+    5.  [10pts] Usage of a color scheme that is consistent, visually appealing, and applicable to the content of the website.
 
 Optional Tasks
-    /*   -   [15pts] Include an interactive feature on your website (i.e. a carousel, a modal, a dropdown, an animated SVG image etc.). Max. 2 interactive features for up to 30 points total.
-    /*   -   [15pts] Implement the CSS framework Bootstrap to style your website (must be the majority of your styling)   */
+    -   [15pts] Include an interactive feature on your website (i.e. a carousel, a modal, a dropdown, an animated SVG image etc.). Max. 2 interactive features for up to 30 points total.
+    -   [15pts] Implement the CSS framework Bootstrap to style your website (must be the majority of your styling)   */
     -   [10pts] Include an HTML form with at least 5 <input> elements on your website (it does not need to be functional)
     -   [10pts] Include a video on your website
-    /*   -   [5pts] Include a favicon
-    /*   -   [5pts] Use a custom font from Google Fonts
+    -   [5pts] Include a favicon
+    -   [5pts] Use a custom font from Google Fonts
     -   [5pts] Include a hover effect on a button, element, or image
     -   [5pts] Include 3+ icons from `Font Awesome`
     -   [5pts] Publish your website on GitHub Pages
@@ -45,24 +45,28 @@ Your Name:  JASON A. CARTER
 Date:   2 MARCH, 2024
 Topic of Website:   PRODUCT/SERVICE
 Required Tasks, select all that were completed (up to 60 points):
-    □ 5 pts; Git-based repository
-    □ 10 pts; HTML framework includes a <header>, <section>, and <footer>
-    □ 25pts; Effective use of CSS; fonts, colors, margins, padding, and borders
-    □ 10 pts; 3+ images, which are relevant to the content of the website
-    □ 10 pts; Usage of a color scheme
+    Yes - 5 pts; Git-based repository
+    Yes - 10 pts; HTML framework includes a <header>, <section>, and <footer>
+    (That's for you to decide, but I think so) - 25pts; Effective use of CSS; fonts, colors, margins, padding, and borders
+    Yes - 10 pts; 3+ images, which are relevant to the content of the website
+    Yes - 10 pts; Usage of a color scheme
 
 Optional Tasks, select all that were completed (unlimited points):
-    □ 15pts, ea.; Include an interactive feature on your website (i.e. a carousel, a modal, a dropdown, an animated SVG image, etc.). Max. 2.
-    □ 15pts; Use Bootstrap to style your website (as the majority of your styling)
-    □ 10pts; Create an HTML form with at least 5 <input>s, (non-functional ok)
-    □ 8pts; Include a video on your website
-    □ 8pts; Include a hover effect on a button, element, or image
-    □ 4pts; Use a custom font from Google Fonts
-    □ 6pts; Include 3+ icons from Font Awesome
-    □ 3pts; Publish your website on GitHub Pages
-    □ 3pts; Include a favicon
+    Yes for a max of 2 - 15pts, ea.; Include an interactive feature on your website (i.e. a carousel, a modal, a dropdown, an animated SVG image, etc.). Max. 2.
+    Yes - 15pts; Use Bootstrap to style your website (as the majority of your styling)
+    Yes - 10pts; Create an HTML form with at least 5 <input>s, (non-functional ok)
+    No - 8pts; Include a video on your website
+    Depends if the carousel counts - 8pts; Include a hover effect on a button, element, or image
+    Yes - 4pts; Use a custom font from Google Fonts
+    No - 6pts; Include 3+ icons from Font Awesome
+    No - 3pts; Publish your website on GitHub Pages
+    Yes - 3pts; Include a favicon
 
 In a few sentences, respond to these questions:
     -   What did you learn while working on this project?
     -   What was your favorite part?
     -   What was most difficult?
+
+    I learned that I'm really bad at retaining how to do things. Thank goodness for Google and your help. I also learned the JavaScript for the navbar to change color on scroll.
+    My favourite part was just being able to make my wife laugh throughout the whole thing; she's why I do stuff. I'm also excited to get into JS, because I'm much more naturally geared towards processes than aesthetics.
+    The carousel was rough; you helped me with it. Thanks for that again. Also, the svg shape dividers wouldn't always work and were messing with the footer when I tried using one, so I kind of gave up there. It's why the bottom of the page looks much duller.
