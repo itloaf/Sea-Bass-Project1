@@ -1,6 +1,6 @@
 Can be:
     1. A personal portfolio
-    2. A landing page for a product or service of your choice. It must be a specific item or service, not a general category of   item or brand.
+    2. A landing page for a product or service of your choice. It must be a specific item or service, not a general category of item or brand.
 
 The content of your website must be original, substantial, and informative.
 The quality of the content, in addition to its presentation, will be a major factor in your grade.
@@ -21,15 +21,15 @@ Required Tasks
     2.  [10pts] Create the HTML framework for a landing page that includes a <header> (navigation bar), multiple <section> divisions for the content of your page, and a <footer>.
     3.  [25pts] Effective use of CSS for styling elements, including fonts, colors, margins, padding, and borders. Your styles should be consistent across the page.
     4.  [10pts] Include 3+ images that are relevant to the content of the website.
-    5.  [10pts] Usage of a color scheme that is consistent, visually appealing, and applicable to the content of the website.
+    /*   5.  [10pts] Usage of a color scheme that is consistent, visually appealing, and applicable to the content of the website.
 
 Optional Tasks
-    -   [15pts] Include an interactive feature on your website (i.e. a carousel, a modal, a dropdown, an animated SVG image etc.). Max. 2 interactive features for up to 30 points total.
+    /*   -   [15pts] Include an interactive feature on your website (i.e. a carousel, a modal, a dropdown, an animated SVG image etc.). Max. 2 interactive features for up to 30 points total.
     /*   -   [15pts] Implement the CSS framework Bootstrap to style your website (must be the majority of your styling)   */
     -   [10pts] Include an HTML form with at least 5 <input> elements on your website (it does not need to be functional)
     -   [10pts] Include a video on your website
-    -   [5pts] Include a favicon
-    -   [5pts] Use a custom font from Google Fonts
+    /*   -   [5pts] Include a favicon
+    /*   -   [5pts] Use a custom font from Google Fonts
     -   [5pts] Include a hover effect on a button, element, or image
     -   [5pts] Include 3+ icons from `Font Awesome`
     -   [5pts] Publish your website on GitHub Pages
@@ -54,7 +54,7 @@ Required Tasks, select all that were completed (up to 60 points):
 Optional Tasks, select all that were completed (unlimited points):
     □ 15pts, ea.; Include an interactive feature on your website (i.e. a carousel, a modal, a dropdown, an animated SVG image, etc.). Max. 2.
     □ 15pts; Use Bootstrap to style your website (as the majority of your styling)
-    □ 10pts; Create an HTML form with at least 5 <input>’s, (non-functional ok)
+    □ 10pts; Create an HTML form with at least 5 <input>s, (non-functional ok)
     □ 8pts; Include a video on your website
     □ 8pts; Include a hover effect on a button, element, or image
     □ 4pts; Use a custom font from Google Fonts

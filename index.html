@@ -8,63 +8,202 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Domino's - Changing Lives Since ~4000 BC</title>
+    <title>Domino's Pizza: All-New Pizza Shoe</title>
 
     <!-- Open in Firefox for an animated favicon message. (spoiler, it just says "HI, TOPH!")-->
     <link rel="icon" type="image/x-icon" href="./static/img/favicon.gif">
 
     <!-- Fonts -->
+      <!-- TODO: Get another one -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
 
+    <!-- Bootstrap, stylesheets, JS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script defer src="./js/scroll-nav.js"></script>
     <link rel="stylesheet" href="./styles.css">
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg bg-red fixed-top">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#"><img style="width: 48px; margin-right: 1em;" src="./static/img/DomiLogo.svg" alt="Domino's Logo"><span class="text-white">Domino's</span></a>
-          <button class="navbar-toggler navbar-dark" type="button" data-bs-toggle="collapse" data-bs-target="#collapsedNav">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="collapsedNav">
-            <ul class="navbar-nav mx-auto">
-              <li><a onclick="location.reload('./index.html#top');" class="nav-link text-white px-4" href="#">Home</a></li>
-              <li><a class="nav-link text-white px-4" href="https://www.youtube.com/watch?v=QX43QTYyV-8" target="_blank">About Us</a></li>
-              <li><a class="nav-link text-white px-4" href="https://www.dominos.com/en/restaurants" target="_blank">Locations</a></li>
-              <li><a class="nav-link text-white px-4" href="#">blank</a></li>
-              <li><a class="nav-link text-white px-4" href="#">blank</a></li>
-              <li><a class="nav-link text-white px-4" href="#">blank</a></li>
-            </ul>
-          </div>
+
+  <!-- Navbar, red, sticky, collapsable on narrow viewports -->
+
+  <!-- This anchor was part of the nav piece until it decided to start moving when the collapsable navbar expanded, even when it had a fixed position. So now it's outside and just held in place with glue.-->
+  <a style="position:fixed; z-index: 9000;" class="navbar-brand" href="#"><img style="width: 48px; margin-right: 1em; margin-top: 11px; margin-left: 2em;" src="./static/img/DomiLogo.svg" alt="Domino's Logo"></a>
+    <nav id="navBar" class="navbar altnav border-bottom border-white navbar-expand-lg fixed-top navclass" style="min-height: 72px;">
+      <!-- After moving the logo outside, the navbar shrunk a few pixels when the items collapsed. So now it is also nailed down to this height. This code is a mess. -->
+      <div class="container-fluid">
+        <button class="navbar-toggler navbar-dark ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#collapsedNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsedNav">
+          <ul class="navbar-nav mx-auto">
+            <li><a onclick="location.reload();" class="nav-link text-white px-4 my-2" href="#">Home</a></li>
+            <li><a class="nav-link text-white px-4 my-2" href="https://www.youtube.com/watch?v=QX43QTYyV-8" target="_blank">About Us</a></li>
+            <li><a class="nav-link text-white px-4 my-2" href="https://www.dominos.com/en/restaurants" target="_blank">Locations</a></li>
+            <li><a class="nav-link text-white px-4 my-2" href="https://www.alamy.com/senior-man-holding-fresh-egg-over-isolated-background-serious-face-thinking-about-question-very-confused-idea-image230411497.html" target="_blank">Something Else</a></li>
+            <li><a class="nav-link text-white px-4 my-2" href="https://www.youtube.com/watch?v=o_V67j-6PmE" target="_blank">Engineer Gaming</a></li>
+            <li><a class="nav-link text-white px-4 my-2" href="https://www.youtube.com/watch?v=z7ITKXoSWCA" target="_blank">I dunno what to put here my guy</a></li>
+          </ul>
         </div>
-      </nav>
+      </div>
+    </nav>
 
+    <!-- Header -->
+    <section id="reviews" class="position-relative carousel-background-gradient overflow-hidden">
 
-        <div id="top" class="carousel-background-gradient top-buffer">
-          <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner ">
-              <div class="carousel-item active ">
-                <div class="d-flex justify-content-center align-items-center">
-                  <p class="d-block carousel-logo-width kaushan-script-regular">sample text</p>
-                </div>
+      <img src="./static/img/pizzabackground.jpg" class="img-fluid bg-img" alt="Background Image"/>
+
+      <h1 class="top-buffer mx-3 text-center engineer-gaming">DOMINO'S PIZZA: ROCKING THE FOOTWEAR WORLD</h1>
+
+<!-- Customer reviews: autoplaying carousel of text. I don't know if the carousel pausing on hover counts as an interactable or a hover effect, especially since it was just built into the Bootstrap example. -->
+<!-- Disclaimer: The basis for this code was generated by TOPH.AI via Slack message. Thanks again, mate -->
+
+      <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel" data-bs-interval="6000">
+        <div class="carousel-inner">
+
+          <div class="carousel-item active">
+            <div class="d-flex justify-content-center align-items-center">
+              <p class="d-block text-center caro-custom-width kaushan-script-regular">
+                <span class="text-red">"</span><span class="text-blue">I was diagnosed with a terminal illness and given months to live. Ever since then, I have drowned my depression with <span class="text-red">Domino's Pizza Shoes </span>and I have never been happier in my life. Thank you, </span><span class="text-red">Domino's!"<br/>--John, 36</span>
+              </p>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="d-flex justify-content-center align-items-center">
+              <p class="d-block text-center caro-custom-width kaushan-script-regular">
+                <span class="text-red">"</span><span class="text-blue">Eh, they're passable, I guess. Thanks, <span class="text-red">Domino's .</span></span><span class="text-red">"<br/>-- Emma, 21</span>
+              </p>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="d-flex justify-content-center align-items-center">
+              <p class="d-block text-center caro-custom-width kaushan-script-regular">
+                <span class="text-red">"</span><span class="text-blue">The pizza shoes are great! Unfortunately, </span><span class="text-red">128.92.141.18.</span><span class="text-blue"> Thanks,</span><span class="text-red"> Domino's!" <br/>-- Anonymous</span>
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="custom-shape-divider-bottom-1709363467">
+        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" class="shape-fill"></path>
+        </svg>
+      </div>
+
+    </section>
+    
+    <!-- Blue section -->
+    <section id="description" class="bg-blue text-white">
+      <h4 class="mb-4">What are Domino's Pizza Shoes?</h4>
+    <p>For any potential legal reasons, these do not exist. For the purpouses of a good IS 120 Project 1 grade, these are the hottest new footwear for all of the hottest cats on the block: Domino's Pizza Shoes!</p>
+    <figure>
+      <img style="border-radius: 3em;" class="img-fluid d-block mx-auto mt-4" src="./static/img/i-got-them-nike-pizza-jordans-1s-v0-oioqgzbm4hwa1.jpg" alt="omg it's a heckin pizza shoe">
+      <figcaption class="mb-4 text-center fst-italic">Pizza shoe!</figcaption>
+    </figure>
+    <p>My wife started laughing very hard when she heard about these. I can only assume she was laughing because of how awesome they are. They're so incredibly cool. She's watching me type this and hasn't said otherwise, so I'll assume I'm right. Anyways.<br/><br>Have you ever wanted to have tomato sauce squish between your toes every time you took a step?<br/>Yeah?<br/>... You're weird, man. These are shoes.</p>
+    </section>
+
+    <div class="custom-shape-divider-top-1709382699">
+      <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+          <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" class="shape-fill"></path>
+      </svg>
+    </div>
+
+    <!-- White section-->
+
+    <section id="description" class="bg-white text-red">
+      <h2 class="my-4 ">What are they made of?</h2>
+      <p class="my-4">Our shoes are made of 100% shoe, ethically sourced from shoe farms around the world.</p>
+      <figure>
+        <img style="border-radius: 3em;" class="img-fluid d-block mx-auto mt-4" src="./static/img/arbol-de-zapatos.jpg" alt="Shoe tree, Michigan">
+        <figcaption class="mb-4 text-center fst-italic">A shoe tree in Michigan.</figcaption>
+      </figure>
+      <p class="my-4"> From seed to shoe, every one of our trees is nurtured with the utmost care by shoe farmers that have been hand-picked by Domino's to ensure quality materials that we are proud to give the Domino's name.<br/><br/>Domino's shoe farmers are renowned in their communities for their morality, work ethic, and devotion to the craft of shoe farming.</p>
+<br/>
+
+  <!-- Meet the Farmers-->
+      <row class="mt-5 justify-content-center text-center">
+        <h2 class="my-4">Meet the Shoe Farmers!</h2>
+        <div class="accordion">
+          <div class="accordion-item border-1 border-red">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed bg-red text-white fst-italic" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="false" aria-controls="panelsStayOpen-collapseOne">
+                Tegucigalpa, Honduras
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse">
+              <div class="accordion-body bg-white">
+                <img class="mx-5 border" style=" border-radius: 3em;" src="./static/img/yippee1.png">
+                <p class="text-red"><span class="fst-italic">La Criatura</span><br/><span class="text-left"><strong>Hobbies: </strong>Intense gaming, shoe farming, exclaiming "&#161LLipi!"<br/><strong>Favourite Pizza Toppings: </strong>Olives, sauerkraut</span><br/><strong>Favourite Muppet: </strong>Gonzo</p>
               </div>
-              <div class="carousel-item">
-                <div class="d-flex justify-content-center align-items-center">
-                  <p class="d-block carousel-logo-width kaushan-script-regular">sample text</p>
-                </div>
+            </div>
+          </div>
+          <div class="accordion-item border-1 border-red">
+            <h2 class="accordion-header border-top border-white">
+              <button class="accordion-button collapsed bg-red text-white fst-italic" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                Kyiv, Ukraine
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+              <div class="accordion-body bg-white">
+                <img class="mx-5 border" style=" border-radius: 3em;" src="./static/img/yippee2.png">
+                <p class="text-red"><span class="fst-italic">Существо</span><br/><span class="text-left"><strong>Hobbies: </strong>Drag racing, shoe farming, committing tax fraud<br/><strong>Favourite Pizza Toppings: </strong>Rosemary, curry powder, lime</span><br/><strong>Favourite Muppet: </strong>Rowlf the dog</p>
               </div>
-              <div class="carousel-item">
-                <div class="d-flex justify-content-center align-items-center">
-                  <p class="d-block carousel-logo-width kaushan-script-regular">sample text</p>
-                </div>
+            </div>
+          </div>
+          <div class="accordion-item border-1 border-red mb-5">
+            <h2 class="accordion-header border-top border-white">
+              <button class="accordion-button collapsed bg-red text-white fst-italic" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                Provo, Utah
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+              <div class="accordion-body bg-white">
+                <img class="mx-5 border" style=" border-radius: 3em;" src="./static/img/yippee3.png">
+                <p class="text-red mb-5"><span class="fst-italic">The Lad</span><br/><span class="text-left"><strong>Hobbies: </strong>Designing mediocre websites with atrocious design<br/><strong>Favourite Pizza Toppings: </strong>Ham, pineapple, mushrooms</span><br/><strong>Favourite Muppet: </strong>Pepe the prawn</p>
               </div>
             </div>
           </div>
         </div>
-    
+      </row>
+    </section>
+
+<!-- Ordering card -->
+  <section class="w-100 mt-5">
+
+    <div class="card bg-blue text-white mx-auto" style="width: 65vw;">
+      <div class="card-body">
+        <p class="card-text"><h2 class="text-white py-2 text-center">Want to order a pair?</h2>
+          <form class="w-100 pt-5">
+            <label for="user">Domino's Account Username</label><br/>
+            <input style="width:100%" type="text" id="user" name="user"><br/><br/>
+            <label for="pass">Domino's Account Password</label><br/>
+            <input style="width:100%" type="password" id="pass" name="pass"><br/><br/>
+            <label for="addy">Shipping Address</label><br/>
+            <input style="width:100%" type="text" id="addy" name="addy"><br/><br/>
+            <label for="email">Email Address</label><br/>
+            <input style="width:100%" type="email" id="email" name="email"><br/><br/>
+            <label for="birthdate">Date of Birth</label><br/>
+            <input style="width:100%" type="date" id="birthdate" name="birthdate"><br/><br/>
+            <input type="checkbox" id="check" name="check"> <label for="check">I understand that this is a fictitious product and I'm not getting pizza shoes for this</label><br/><br/><br/>
+            <input style="width: 15vw;" class="text-blue" type="submit"> 
+          </form>
+        </p>
+      </div>
+    </div>
+
+  </section>
+
+  <footer class="position-absolute bottom-1 bg-red text-white text-center w-100 mt-5 py-2">
+    Various fictitious legal info, maybe links to other places on the website<br/>-- Jason A. Carter
+  </footer>
+
 </body>
 </html>

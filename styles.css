@@ -5,46 +5,169 @@
     --DomiRed: #e31837;
 }
 
-.bg-blue{
+
+/* These classes are used for a script that changes navbar colors on scroll, but it loads wrong until you scroll once. Sometimes.*/
+
+.navclass{
+    background-color: var(--DomiRed) !important;
+    transition: background-color 1s ease-out;
+    -moz-transition: background-color 1s ease-out;
+    -webkit-transition: background-color 1s ease-out;
+}
+
+.altnav{
     background-color: var(--DomiBlue);
+    transition: background-color 1s ease-out;
+    -moz-transition: background-color 1s ease-out;
+    -webkit-transition: background-color 1s ease-out;
 }
-.text-blue{
-    color:var(--DomiBlue);
-}
-.bg-red{
-    background-color: var(--DomiRed);
-}
-.text-red{
-    color:var(--DomiRed);
-}
-.bg-white{
-    background-color: var(--DomiWhite);
-}
-.text-white{
-    color:var(--DomiWhite);
-}
-
-
-
-.top-buffer{
-    margin-top: 100px;
-}
-
-.carousel-item{
-    z-index: -1;
-}
-
-.carousel-background-gradient {
-    background-image: linear-gradient(to right, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0), rgba(255, 255, 255, 0), rgba(255, 255, 255, 1));
-  }
-  
-  .carousel-logo-width {
-    width: 40vw;
-  }
 
 .kaushan-script-regular {
     font-family: "Kaushan Script", cursive;
     font-weight: 400;
+    font-size: large;
     font-style: normal;
   }
-  
+
+/*  This could be done with replacing Bootstrap's colors, but I can't as easily change all that without all the files or a lot more classes.    */
+
+        .bg-blue{
+            background-color: var(--DomiBlue) !important;
+        }
+        .text-blue{
+            color:var(--DomiBlue);
+        }
+        .bg-red{
+            background-color: var(--DomiRed) !important;
+        }
+        .text-red{
+            color:var(--DomiRed) !important;
+        }
+        .bg-white{
+            background-color: var(--DomiWhite) !important;
+        }
+        .text-white{
+            color:var(--DomiWhite) !important;
+        }
+        .border-red{
+            border-color: var(--DomiRed) !important;
+        }
+
+
+
+/*  Even though these classes see minimal usage, since I'm already using Bootstrap I'd rather do my styling via classes, instead of in-line CSS. Except I still did. Whoops.  */
+
+        .top-buffer{
+            margin-top: 110px;
+            margin-bottom: 10vh;
+        }
+
+        .carousel-item{
+            z-index: -1;
+        }
+
+        .caro-custom-width{
+            max-width: 60vw;
+            min-width: 400px;
+        }
+
+        .carousel-background-gradient {
+            /* This ensures that it's always the outer fifths of the viewport that have the gradient. */
+            background-image: linear-gradient(to right, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0), rgba(255, 255, 255, 0), rgba(255, 255, 255, 0), rgba(255, 255, 255, 1));
+        }
+        
+        .carousel-logo-width {
+            width: 40vw;
+        }
+
+/*  This is SVG divider shape stuff. */
+
+        .custom-shape-divider-bottom-1709363467 {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            overflow: hidden;
+            line-height: 0;
+        }
+        
+        .custom-shape-divider-bottom-1709363467 svg {
+            position: relative;
+            display: block;
+            width: calc(100% + 1.3px);
+            height: 5vh;
+            transform: rotate(180deg);
+            
+        }
+        
+        .custom-shape-divider-bottom-1709363467 .shape-fill {
+            fill: #006491;
+        }
+
+        .custom-shape-divider-top-1709382699 {
+            top: 0;
+            left: 0;
+            width: 100%;
+            overflow: hidden;
+            line-height: 0;
+        }
+        
+        .custom-shape-divider-top-1709382699 svg {
+            position: relative;
+            display: block;
+            width: calc(100% + 1.3px);
+            height: 58px;
+        }
+        
+        .custom-shape-divider-top-1709382699 .shape-fill {
+            fill: #006491;
+        }
+
+        .custom-shape-divider-bottom-1709398081 {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            overflow: hidden;
+            line-height: 0;
+        }
+        
+        .custom-shape-divider-bottom-1709398081 svg {
+            position: relative;
+            display: block;
+            width: calc(100% + 1.3px);
+            height: 107px;
+        }
+        
+        .custom-shape-divider-bottom-1709398081 .shape-fill {
+            fill: #E31837;
+        }
+
+/* And various others */
+
+        .bg-img{
+            opacity: .3;
+            position: absolute;
+            overflow: hidden;
+            z-index: -2;
+        }
+        
+        #reviews{
+            position:absolute;
+            width: 100vw;
+            height: 60vh;
+            overflow: hidden;
+        }
+
+        #description{
+            padding-left: 10vw;
+            padding-right: 10vw;
+            padding-top: 5vh;
+            padding-bottom: 5vh;
+        }
+
+        .engineer-gaming{
+            -webkit-text-stroke-color: var(--DomiRed);
+            -webkit-text-stroke-width: 2px;
+            color: white;
+        }
